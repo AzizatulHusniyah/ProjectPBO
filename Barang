@@ -1,0 +1,20 @@
+class DataLab:
+    def __init__ (self, nama_barang="", kode_barang=0, jumlah_barang="", kondisi_barang=""):
+        self.nama_barang = nama_barang
+        self.kode_barang = kode_barang
+        self.jumlah_barang = jumlah_barang
+        self.kondisi_barang = kondisi_barang
+
+    def data_tampil(self):
+        print ("\nnama_barang:", self.nama_barang)
+        print ("kode_barang:", self.kode_barang)
+        print ("jumlah_barang:", self.jumlah_barang)
+        print ("kondisi_barang:", self.kondisi_barang)
+
+data_lab1 = DataLab("Komputer", "KB001", "40", "baik")
+data_lab2 = DataLab("Proyektor", "PJ002", "1", "Rusak")
+data_lab3 = DataLab("Meja", "MJ003", "55", "Baik")
+
+data_lab1.data_tampil()
+data_lab2.data_tampil()
+data_lab3.data_tampil()
